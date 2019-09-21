@@ -1,22 +1,90 @@
-.App {
-  text-align: center;
-}
 
-.App-logo {
-  height: 40vmin;
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.app {
+  height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  overflow: hidden;
+  background: rgba(0,0,0,1);
+  color: white;
+  text-align: center;
+}
+
+/* 
+.app[data-hour='0'],
+.app[data-hour='1'],
+.app[data-hour='2'],
+.app[data-hour='3'] {
+  background: #362942;
+  color: white;
+}
+.app[data-hour='4'],
+.app[data-hour='5'],
+.app[data-hour='6'],
+.app[data-hour='7'] {
+  background: #82bfe5;
+  color: #2f2f2f;
+}
+
+.app[data-hour='8'],
+.app[data-hour='9'],
+.app[data-hour='10'],
+.app[data-hour='11'] {
+  background: #c3e9f7;
+  color: #2f2f2f;
+}
+
+.app[data-hour='12'],
+.app[data-hour='13'],
+.app[data-hour='14'],
+.app[data-hour='15'] {
+  background: #efad51;
+  color: #2f2f2f;
+}
+
+.app[data-hour='16'],
+.app[data-hour='17'],
+.app[data-hour='18'],
+.app[data-hour='19'] {
+  background: #a33737;
   color: white;
 }
 
-.App-link {
-  color: #09d3ac;
+.app[data-hour='20'],
+.app[data-hour='21'],
+.app[data-hour='22'],
+.app[data-hour='23'] {
+  background: #192f49;
+  color: white;
+} */
+
+.weather-icon {
+  width: 100px;
+  height: 100px;
+  font-size: 90px;
+  text-align: center;
+  margin: 1rem;
+}
+
+.weather-details {
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.weather-details .city {
+  font-size: 24px;
+  margin-bottom: 1rem;
+}
+
+.weather-details .country {
+  font-size: 13px;
+  margin-bottom: 1rem;
+  margin-top: -1em;
+  opacity: .3
+}
+
+
+.weather-details .temperature {
+  font-size: 48px;
 }
