@@ -4,15 +4,6 @@ import WeatherIcon from './components/WeatherIcon';
 import WeatherDetails from './components/WeatherDetails';
 const publicIp = require("react-public-ip");
 
-
-
-
-
-
-
-
-
-
 class App extends Component {
   state = {
     icon: '',
