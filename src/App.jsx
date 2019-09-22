@@ -59,7 +59,7 @@ class App extends Component {
 
   fetchIp = () => {
     this.getIp().then((ip) => {
-      fetch(`http://api.ipstack.com/${ip}?access_key=4b9d1210b08953761095e007605657c9&format=1`)
+       fetch(`https://api.ipgeolocation.io/ipgeo?apiKey=a64e46f9c9794dd591567912234795e1&ip=${ip}`)
         .then(response => response.json())
         .then(({city,country_name}) => this.fetchWeatherData(city,country_name))
         
