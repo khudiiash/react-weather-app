@@ -13,14 +13,10 @@ class App extends Component {
     temperature: '',
     weatherCode: '',
     background: '',
-    loadingText: 'Загрузка',
     fetching: true
   }
   componentDidMount () {
     this.fetchIp();
-    setTimeout(() => {
-      this.setState({loadingText: "Пожалуйста, разрешите загрузку скриптов с непроверенных источников"})
-    }, 5000);
   }
 
   getIp = async () => {
@@ -106,7 +102,7 @@ class App extends Component {
     const {fetching, icon, time, city, country, temperature, background, weatherCode} = this.state;
       
     return fetching ? 
-      <div className='app' ><span ref='loading'>{this.state.loadingText}</span></div>
+      <div className='app' ><span ref='loading'>Загрузка</span></div>
       :
       <div className='app' style={{
         background: ` linear-gradient(
